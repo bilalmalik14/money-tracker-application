@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #17181F;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 420px; /* ⬆️ Increased width */
+  margin: 40px auto;
+  background: #1E1F29;
+  padding: 25px; /* ⬆️ Increased padding */
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 3.5rem; /* ⬆️ Increased size */
+  font-weight: bold;
+}
+
+h1 span {
+  font-size: 1rem;
+  vertical-align: super;
+  display: inline-block;
+  margin-left: 3px;
+  opacity: 0.8;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid #30313d;
+  padding: 12px 14px; /* ⬆️ Increased padding */
+  border-radius: 8px;
+  font-size: 1.2rem; /* ⬆️ Larger text */
+  transition: 0.3s;
+}
+
+form input:focus {
+  border-color: #888;
+  outline: none;
+}
+
+form input[type="datetime-local"] {
+  color: #bbb;
+}
+
+form div.basic {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+form button {
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.2rem; /* ⬆️ Larger button text */
+  font-weight: bold;
+  background-color: #3A3B4A;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #4E4F5E;
+}
+
+.clear-btn {
+  width: 100%;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1.2rem; /* ⬆️ Larger text */
+  font-weight: bold;
+  background-color: #d9534f;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.clear-btn:hover {
+  background-color: #c9302c;
+}
+
+div.transactions {
+  margin-top: 15px;
+  padding: 12px;
+  background: #21222D;
+  border-radius: 10px;
+}
+
+div.transaction {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-bottom: 1px solid #30313d;
+}
+
+div.transaction:last-child {
+  border-bottom: none;
+}
+
+div.transaction div.name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+div.transaction div.description {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+div.transaction div.datetime {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+div.right {
+  text-align: right;
+}
+
+div.price {
+  text-align: right;
+  font-size: 1.4rem; /* ⬆️ Bigger price text */
+  font-weight: bold;
+}
+
+div.price sup {
+  font-size: 0.8rem;
+  vertical-align: super;
+  opacity: 0.8;
+}
+
+div.price.green {
+  color: #1FC91F;
+}
+
+div.price.red {
+  color: #FF4C4C;
+}
+
+.no-transactions {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #888;
+  padding: 12px;
+}
